@@ -1,0 +1,60 @@
+/* ------------------------------------------------------------ *\
+	List offers
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.list-offers {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-block: 60px;
+
+     @media screen and (max-width: 768px) {
+            margin-bottom: 100px;
+        }
+
+    @media screen and (max-width: 550px) {
+           flex-direction: column;
+        }
+
+    @media screen and (max-width: 550px) {
+         margin-bottom: 60px;
+        }
+
+    h4 {
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    li:not(:last-child) {
+        position: relative;
+        margin-right: 30px;
+        padding-right: 30px;
+
+         @media screen and (max-width: 550px) {
+           margin: 0 0 40px 0;
+           padding: unset;
+           position: unset;
+           
+        }
+    }
+
+    li:not(:last-child):after {
+	    content: "";
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        width: 2px;
+        height: 140px;
+        background-color: #dbd6cc;
+        top: 0;
+        right: 0;
+    }
+
+    figure {
+        margin-bottom: 15px;;
+    }
+}

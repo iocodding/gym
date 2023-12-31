@@ -1,0 +1,143 @@
+/* ------------------------------------------------------------ *\
+	Hero
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.hero {
+    position: relative;
+    min-height: 81.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+     @media screen and (max-width: 768px) {
+            min-height: 70rem;
+        }
+
+     @media screen and (max-width: 550px) {
+            min-height: 60rem;
+        }
+
+    .hero__image {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 100%;
+	}
+
+    .hero__image img {
+    	width: 100%;
+   		height: 100%;
+    	object-fit: cover;
+	}
+
+    .hero__inner {
+        position: relative;
+        display: flex;
+
+         @media screen and (max-width: 550px) {
+            display: block;
+        }
+    }
+
+    .hero__head {
+        flex: 0 0 100%;
+    }
+
+    .hero__content {
+       position: relative;
+        color: #fff;
+        text-transform: uppercase;
+        max-width: 570px;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    .hero__content span {
+        display: inline-block;
+        margin-top: 20px;
+        font-weight: 300;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 400px) {
+            font-size: 3.8rem;
+        }
+    }
+
+    .hero__content > h6 {
+        position: relative;
+        margin-bottom: 20px;
+        z-index: 2;
+    }
+
+    .hero__content > h6:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 160px;
+        height: 14px;
+        transform: skew(-12deg) translateX(-50%);
+        background: rgba(238, 111, 87, 0.5);
+        z-index: -1;
+        margin-left: -22px;
+    }
+
+    .hero__actions {
+        position: relative;
+        z-index: 2;
+    }
+
+   .hero__actions:before {
+        content: "";
+        position: absolute;
+        border: 1px solid hsla(0, 0%, 100%, .362);
+        left: 50%;
+        transform: translate(-50%);
+        top: -12px;
+        height: 55px;
+        width: 190px;
+        margin-left: 12px;
+        z-index: -1;
+        transition: top 0.3s, margin-left 0.3s;
+    }
+
+    .hero__actions:hover:before {
+        top: 0;
+        margin-left: 0;
+        transition: top 0.3s, margin-left 0.3s
+    }
+
+    .hero__aside {
+        color: $c-white;
+
+         @media screen and (max-width: 550px) {
+            display: none;
+        }
+    }
+
+    .hero__aside > h6 {
+        transform: rotate(90deg);
+        position: relative;
+        margin-bottom: 90px;
+        font-weight: 700;;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+    }
+
+    .hero__aside > h6:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 85px;
+        background-color: #FF0336;
+        width: 44px;
+        height: 2px;
+    }
+}

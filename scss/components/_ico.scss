@@ -1,0 +1,32 @@
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.ico {
+    transition: color .3s ease-in-out;
+
+    &:hover {
+        color: $c-base;
+    }
+}
+
+/* ico plus */
+
+.ico--plus {
+    &:hover {
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        animation: spin .7s linear forwards;
+        transition: transform 0.3s ease-in-out;
+    }
+}

@@ -1,0 +1,70 @@
+/* ------------------------------------------------------------ *\
+	Accordion
+\* ------------------------------------------------------------ */
+@import '../generic/variables';
+
+.accordion {
+   h4 {
+        position: relative;
+        font-weight: bold;
+        padding-bottom: 15px;
+    }
+
+    h4:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $c-base;
+        width: 50px;
+        height: 3px;
+    }
+    
+    .accordion__head {
+        position: relative;
+        cursor: pointer;
+        padding-block: 20px;
+    }
+
+     .accordion__icon {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #f3eef3;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+     }
+
+     .accordion__icon:after,
+     .accordion__icon:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 15px;
+        height: 2px;
+        background-color: $c-base;
+        border-radius: 2px;
+     }
+
+     .accordion__icon:after {
+        transform: translate(-50%, -50%);
+     }
+
+     .accordion__icon:before {
+        transform: translate(-50%, -50%) rotate(90deg);
+        transition: all .3s ease-in-out;
+     }
+
+     .accordion__head.active .accordion__icon:before {
+        transform: translate(-50%, -50%) rotate(0);
+     }
+
+     .accordion__body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease-in-out;
+     }
+}

@@ -1,0 +1,14 @@
+/* ------------------------------------------------------------ *\
+	Plus-ico
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.plus-ico {
+    color: $c-white;
+    background-color: $c-base;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 10px;
+    border-radius: 5px;
+}

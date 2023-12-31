@@ -1,0 +1,63 @@
+/* ------------------------------------------------------------ *\
+	List benefits
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.list-benefits {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 35px;
+    max-width: 392px;
+    width: 100%;
+    margin-bottom: 90px;
+
+     @media screen and (max-width: 1024px) {
+        margin: 0 auto;
+        margin-block: 45px;
+    }
+
+    
+     @media screen and (max-width: 900px) {
+        gap: 15px
+    }
+
+     @media screen and (max-width: 440px) {
+            grid-template-columns: repeat(1,1fr);
+            place-items: center;
+        }
+
+    figure {
+        background-color: #2b2b2b;
+        border-radius: 50%;
+        min-width: 60px;
+        min-height: 60px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 12px;
+    }
+
+    img {
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+
+    li:hover figure {
+        background-color: $c-base;
+    }
+
+    h6 {
+        color: $c-white;
+        font-size: 16px;
+        max-width: 135px;
+        width: 100%;
+    }
+}

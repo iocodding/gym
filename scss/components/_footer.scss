@@ -1,0 +1,119 @@
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.footer {
+    color: $c-grey;
+    padding-block: 40px;
+    overflow: hidden;
+
+      @media screen and (max-width: 650px) {
+          text-align: center;
+          padding-bottom: unset;
+        }
+
+    .footer__logo {
+        margin-bottom: 10px;
+    }
+
+    .footer__entry {
+        font-size: 14px;
+        font-weight: 500;
+        max-width: 370px;
+        width: 100%;
+        margin-bottom: 20px;
+        line-height: 1.8;
+
+          @media screen and (max-width: 1024px) {
+           max-width: 312px;
+        }
+
+         @media screen and (max-width: 650px) {
+           margin: 0 auto;
+            margin-bottom: 30px;
+        }
+    }
+
+    .footer__socials {
+        list-style: none;
+        display: flex;
+        margin-bottom: 15px;
+
+         @media screen and (max-width: 650px) {
+             justify-content: center;
+        }
+    }
+
+    .footer__socials figure {
+        background-color: #efefef;
+        border-radius: 50%;
+        width: 25px;
+        text-align: center;
+    }
+
+    .footer__socials li:not(:last-child){
+        margin-right: 15px;
+    }
+
+    li:hover a{
+        color: $c-base;
+        font-weight: bold;
+    }
+
+    h5 {
+        text-transform: capitalize;
+        margin-bottom: 16px;
+        position: relative;
+        padding-bottom: 12px;
+    }
+
+    h5:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $c-base;
+        width: 45px;
+        height: 3px;
+
+         @media screen and (max-width: 650px) {
+         left: 50%;
+         transform: translate(-50%);
+        }
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    li > p:first-child {
+        font-weight: 700;
+        margin-bottom: 14px;
+    }
+
+    li:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .footer__copyrights a {
+        color: $c-base;
+        font-weight: 500;
+    }
+
+    .footer__copyrights a:hover {
+       text-decoration: underline;
+    }
+}
+
+

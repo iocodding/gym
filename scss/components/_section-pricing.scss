@@ -1,0 +1,25 @@
+/* ------------------------------------------------------------ *\
+	Feature
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.section-pricing {
+    padding-block: 70px;
+
+    .section__head {
+        max-width: 550px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .section__head h6 {
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        margin-bottom: 12px;
+    }
+}

@@ -1,0 +1,16 @@
+/* ------------------------------------------------------------ *\
+	list images
+\* ------------------------------------------------------------ */
+
+.list-images {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 70px;
+
+	li:not(:last-child) {
+		margin-right: 10px;
+	}
+}

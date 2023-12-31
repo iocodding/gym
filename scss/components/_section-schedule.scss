@@ -1,0 +1,12 @@
+/* ------------------------------------------------------------ *\
+	Section schedule
+\* ------------------------------------------------------------ */
+@import '../generic/variables';
+
+.section-schedule {
+    padding-block: 100px;
+
+     @media screen and (max-width: 1024px) {
+          padding-block: 60px;
+        }
+}

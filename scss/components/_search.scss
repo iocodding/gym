@@ -1,0 +1,27 @@
+/* ------------------------------------------------------------ *\
+    Search
+\* ------------------------------------------------------------ */
+@import '../generic/variables';
+
+.search {
+    .hidden{ 
+        display: none;
+    }
+
+    .search__field {
+        width: 80%;
+        padding: 10px;
+        outline: none;
+    }
+
+    .search__btn {
+        width: 20%;
+        margin-left: -5px;
+        padding: 11px;
+        background-color: $c-base;
+        border: none;
+        text-transform: capitalize;
+        color: $c-white;
+        cursor: pointer;
+    }
+}

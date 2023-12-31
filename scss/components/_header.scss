@@ -1,0 +1,68 @@
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 5;
+    position: fixed;
+    background-color: transparent;
+
+    &.scrolled {
+        background: $c-black;
+        padding-block: 45px;
+    }
+
+    .header__aside {
+        display: flex;
+    	align-items: center;
+        position: absolute;
+        right: 0;
+        top: 22px;
+        margin-right: 50px;
+
+         @media screen and (max-width: 1023px) {
+            position: unset;
+            justify-content: center;
+            margin: 50px 0 0 0;
+        }
+
+         @media screen and (max-width: 400px) {
+            flex-direction: column;
+        }
+    }
+
+     .header__content {
+         @media screen and (max-width: 1023px) {
+          padding: 1rem 3rem;
+            overflow: auto;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100dvh;
+            width: 100%;
+            z-index: 1;
+            transform: translateX(-100%);
+            background-color: #232222;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: all .3s ease-in-out;
+
+            &.is-visible {
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                pointer-events: all;
+
+            }
+        }
+       
+    }   
+}
+

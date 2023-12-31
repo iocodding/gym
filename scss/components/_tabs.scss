@@ -1,0 +1,44 @@
+/* ------------------------------------------------------------ *\
+	Tabs
+\* ------------------------------------------------------------ */
+@import '../generic/variables';
+
+.tabs {
+    
+    .tabs__nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 1024px) {
+            row-gap: 30px;
+        }
+    }
+
+    .tabs__nav a {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 700;
+        border: 1px solid #d7d7d7;
+        padding-inline: 32px;
+        padding-block: 9px;
+        border-radius: 20px;
+         transition: background-color .3s ease-in-out, color .3s ease-in-out , box-shadow .3s ease-in-out;
+    }
+
+    .tabs__nav a:hover {
+        background-color: $c-base;
+        color: $c-white;
+        box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+        transition: background-color .3s ease-in-out, color .3s ease-in-out , box-shadow .3s ease-in-out;
+    }
+
+    .tabs__nav li:not(:last-child){
+        margin-right: 12px;
+    }
+
+    .tabs__head {
+        margin-bottom: 50px;
+    }
+}

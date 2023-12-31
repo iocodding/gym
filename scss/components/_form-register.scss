@@ -1,0 +1,50 @@
+/* ------------------------------------------------------------ *\
+	Form register
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.form-register {
+    form {
+        background-color: #f8f8f8;
+        padding: 45px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .form__row:not(:last-child) {
+        margin-bottom: 14px;
+    }
+
+    .form__btn {
+        border: none;
+        font-size: 14px;
+        line-height: 1.2;
+        padding-inline: 35px;
+    }
+
+    .form__actions {
+        text-align: center;
+    }
+
+    h3 {
+        position: relative;
+        padding-bottom: 15px;
+    }
+
+    h3:after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background-color: $c-base;
+    }
+
+    .form__head {
+        margin-bottom: 30px;
+    }
+}

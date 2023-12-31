@@ -1,0 +1,15 @@
+/* ------------------------------------------------------------ *\
+	List contacts
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.list-contacts {
+    ol {
+        list-style: none;
+    }
+
+    li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}

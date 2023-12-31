@@ -1,0 +1,43 @@
+/* ------------------------------------------------------------ *\
+	Testimonial
+\* ------------------------------------------------------------ */
+
+.testimonial {
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 20px;
+
+    .testimonial__image {
+        max-width: 80px;
+        max-height: 80px;
+        margin-right: 20px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        vertical-align: middle;
+        border-radius: 50%;
+    }
+
+    .testimonial__head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    blockquote {
+        margin-bottom: 20px;
+    }
+
+    h5 {
+        text-transform: capitalize;
+        color: #000;
+    }
+
+    span {
+        text-transform: capitalize;
+        color: hsl(0, 0%,40%)
+    }
+}

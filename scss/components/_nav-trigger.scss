@@ -1,0 +1,60 @@
+/* ------------------------------------------------------------ *\
+	Nav trigger
+\* ------------------------------------------------------------ */
+
+.nav-trigger {
+	display: inline-block;
+	width: 30px; 
+	height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 35px;
+
+    @media screen and (min-width: 1024px) {
+     display: none; 
+  }
+
+	span {
+		position: absolute;
+		top: 0; 
+		left: 0; 
+		width: 100%; 
+		height: 3px; 
+		background: #fff;
+		transition: top .3s .3s, rotate .3s 0s, opacity .3s .3s;
+	}
+
+	span:nth-child(2) {
+		top: 9px; 
+	}
+
+	span:nth-child(3) {
+		top: 17px; 
+	}
+}
+
+.nav-trigger.is-active {
+
+	span {
+		transition: top .3s 0s, rotate .3s .3s, opacity .3s 0s;
+		z-index: 100;
+
+		&:where(:nth-child(1), :nth-child(3)) {
+			top: 9px; 
+		}
+
+		&:nth-child(1) {
+			rotate: 45deg;
+		}
+
+		&:nth-child(2) {
+			opacity: 0; 
+		}
+
+		&:nth-child(3) {
+			rotate: -45deg;
+		}
+	}
+	
+}

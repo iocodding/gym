@@ -1,0 +1,36 @@
+/* ------------------------------------------------------------ *\
+	Card
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.card {
+    text-align: center;
+    background-color: $c-white;
+    padding: 50px 25px;
+	position: relative;
+    margin-top: -6.2rem;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: color .3s ease-in-out;
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 100px;
+        }
+
+
+    &:hover {
+        color: $c-white;
+        background-image: url(/public/images/hover.jpg);
+        cursor: pointer;
+    }
+
+    .card__image {
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+}

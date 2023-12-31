@@ -1,0 +1,82 @@
+/* ------------------------------------------------------------ *\
+	Card simple
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.card-simple {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid #e7e6e6;;
+    position: relative;
+    cursor: pointer;
+
+    &:hover .card__body {
+        right: 0;
+    }
+
+    figure {
+        height: 500px;
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .card__body {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        backdrop-filter: blur(15px);
+        border-radius: 15px;
+        color: $c-white;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 2s;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    h4:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        background-color: $c-white;
+        width: 40px;
+        height: 2px;
+    }
+
+    .card__entry {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 40px 0;
+        font-weight: 400;
+    }
+
+    .card__content {
+        display: flex;
+    }
+
+    .card__content p:first-child {
+        margin-right: 20px;
+    }
+
+    .card__btn {
+        border-radius: 8px;
+        width: 155px;
+    }
+}

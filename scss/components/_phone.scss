@@ -1,0 +1,21 @@
+/* ------------------------------------------------------------ *\
+	Phone
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.phone {
+    font-size: 28px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 20px;
+    
+    a {
+        text-decoration: none;
+    }
+
+    span {
+        color: $c-base;
+        text-transform: capitalize;
+    }
+}

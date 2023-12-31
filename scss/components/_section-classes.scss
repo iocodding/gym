@@ -1,0 +1,13 @@
+/* ------------------------------------------------------------ *\
+    Section classses
+\* ------------------------------------------------------------ */
+@import '../generic/variables';
+
+.section-classes {
+    padding-block: 80px;
+    
+    .section__grid {
+        row-gap: 30px;
+    }
+}
+

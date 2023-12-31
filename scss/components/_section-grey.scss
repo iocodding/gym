@@ -1,0 +1,87 @@
+/* ------------------------------------------------------------ *\
+	Section grey
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.section-grey {
+    background-color: 	#E8E8E8;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    h5 {
+       font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    .section__inner > h5 {
+        margin-bottom: 15px;
+         position: relative;
+         z-index: 1;
+    }
+
+    .section__inner > h5:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 86px;
+        height: 11px;
+        transform: skew(-12deg) translateX(-50%);
+        background: rgba(238, 111, 87, 0.5);
+        margin-left: 37px;
+        z-index: -1;
+         @media screen and (max-width: 1000px) {
+           left: 50%;
+           margin-left: -20px;
+        }
+    }
+
+    .section__inner {
+        padding-block: 105px;
+        overflow: hidden;
+
+         @media screen and (max-width: 1000px) {
+            text-align: center;
+        }
+
+         @media screen and (max-width: 550px) {
+          padding-block: 20px;
+        }
+    }
+
+    .section__images {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+         @media screen and (max-width: 1000px) {
+            display: none;
+        }
+    }
+
+    .section__images > figure {
+        position: relative;
+        right: -50%;
+        transform: translate(-50%);
+        z-index: 2;
+    }
+
+    .section__images figure + figure {
+        position: relative;
+        left: -50%;
+        transform: translate(50%);
+        z-index: 1;
+        margin-right: -20px;
+    }
+
+    .section__images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}

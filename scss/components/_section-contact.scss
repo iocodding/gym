@@ -1,0 +1,48 @@
+/* ------------------------------------------------------------ *\
+    Section contact
+\* ------------------------------------------------------------ */
+@import '../generic/variables';
+
+.section-contact {
+    padding-top: 90px;
+    overflow: hidden;
+
+    .section__inner {
+        @media screen and (max-width: 1024px) {
+          padding-inline: 50px;
+        }
+
+         @media screen and (max-width: 550px) {
+          padding-inline: unset;
+        }
+    }
+
+    .section__head {
+        max-width: 498px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #646464;
+        margin-bottom: 40px;
+        font-weight: 500;
+
+        @media screen and (max-width: 1024px) {
+            max-width: unset
+        }
+    }
+
+    .section__head h2 {
+        color: $c-black;
+        margin-bottom: 40px;
+    }
+
+    .section__foot {
+        padding-top: 100px;
+    }
+
+    iframe {
+        @media screen and (max-width: 550px) {
+            height: 320px;
+        }
+    }
+}

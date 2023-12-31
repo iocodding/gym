@@ -1,0 +1,19 @@
+/* ------------------------------------------------------------ *\
+	Swiper
+\* ------------------------------------------------------------ */
+
+.swiper {
+
+    .swiper-pagination {
+        position: relative;
+        margin-top: 40px;
+        bottom: auto;
+    }
+
+    .swiper-pagination-bullet {
+        height: 12px;
+        width: 12px;
+        background-color: #fff;
+    }
+
+}

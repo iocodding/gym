@@ -1,0 +1,14 @@
+/* ------------------------------------------------------------ *\
+	Twitter
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.twitter {
+    transition: color .3s ease-in-out;
+    font-size: 20px;
+
+    &:hover {
+        color: $c-base;
+    }
+}

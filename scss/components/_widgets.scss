@@ -1,0 +1,16 @@
+/* ------------------------------------------------------------ *\
+    Widget
+\* ------------------------------------------------------------ */
+@import '../generic/variables';
+
+.widgets {
+    li:not(:last-child) {
+        padding: 15px;
+    }
+
+    li:last-child {
+         @media screen and (max-width: 1024px) {
+          background-color: transparent;
+        }
+    }
+}

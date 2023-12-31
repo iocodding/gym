@@ -1,0 +1,14 @@
+/* ------------------------------------------------------------ *\
+	Callout
+\* ------------------------------------------------------------ */
+
+@import '../generic/variables';
+
+.callout {
+    position: relative;
+    color: $c-white;
+
+    h2{
+        text-transform: capitalize;
+    }
+}

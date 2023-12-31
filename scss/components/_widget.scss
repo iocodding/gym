@@ -1,0 +1,27 @@
+/* ------------------------------------------------------------ *\
+    Widget
+\* ------------------------------------------------------------ */
+@import '../generic/variables';
+
+
+.widget {
+    background-color: hsla(0, 0%, 96%, 0.5);
+    margin-bottom: 40px;
+
+     h4 {
+        position: relative;
+        font-weight: bold;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+
+    h4:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $c-base;
+        width: 50px;
+        height: 3px;
+    }
+}

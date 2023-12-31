@@ -1,0 +1,97 @@
+/* ------------------------------------------------------------ *\
+	Button
+\* ------------------------------------------------------------ */
+@import '../generic/variables';
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	appearance: none;
+	font-weight: 600;
+	font-size: 15px;
+	padding: 15px 27px;
+	text-transform: uppercase;
+}
+
+/* btn outline */
+
+.btn--outline { 
+	color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid rgba(255,255,255,0.3);
+
+	 .btn__text {
+	 	color: $c-white;
+	 	text-transform: uppercase;
+	 	font-weight: 700;
+	 	font-size: 14px;
+	 }
+
+	span {
+		margin-inline: 5px 25px;
+	}
+}
+
+
+/* btn white */
+
+.btn--white { 
+	background-color: $c-white;
+	color: $c-black;
+}
+
+.btn--white:hover { 
+	background-color: $c-base;
+	transition: background-color 0.3s ease-in-out;
+	color: $c-white;
+}
+
+
+/* btn black */
+
+.btn--black { 
+	background-color: $c-dark;
+	color: $c-white;
+}
+
+.btn--black:hover {
+	background-color: $c-base;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.btn--black > i {
+	color: $c-white;
+}
+
+/* btn red */ 
+
+.btn--red {
+	background: $c-base;
+	color: $c-white;
+	font-size: 14px;
+	padding: 12px;
+}
+
+.btn--red:hover {
+	background-color: $c-grey;
+	transition: background-color 0.3s ease-in-out;
+}
+
+/* btn grey */ 
+
+.btn--grey {
+	background-color: #555;
+	border-radius: 20px;
+	color: $c-white;
+	padding: 10px 22px;
+}
+
+
+.btn--grey:hover {
+	background-color: $c-base;
+	transition: background-color 0.3s ease-in-out;
+}

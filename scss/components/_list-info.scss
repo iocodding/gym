@@ -1,0 +1,31 @@
+/* ------------------------------------------------------------ *\
+    List info
+\* ------------------------------------------------------------ */
+@import '../generic/variables';
+
+.list-info {
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 60px;
+    }
+
+     @media screen and (max-width: 590px) {
+        margin-bottom: 60px;
+    }
+
+    ol {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+
+         @media screen and (max-width: 590px) {
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    ol li {
+        flex: 0 0 50%;
+    }
+}

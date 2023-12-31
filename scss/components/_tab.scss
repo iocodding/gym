@@ -1,0 +1,51 @@
+/* ------------------------------------------------------------ *\
+	Tab
+\* ------------------------------------------------------------ */
+@import '../generic/variables';
+
+.tab {
+   
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+             background-color: #f2f2f2;
+        }
+    }
+
+    ul:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    li {
+        width: 25%;
+        text-align: center;
+        background-color: #f2f2f2;
+        padding-block: 25px;
+
+         @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    ul li:last-child {
+        padding-block: 31px;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 500;
+        color: #a0a0a0;
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
+    h6 {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,55 @@
+/* ------------------------------------------------------------ *\
+	Calculate
+\* ------------------------------------------------------------ */
+
+.calculate {
+
+    .hidden {
+        display: none;
+    }
+
+    .calculate__field {
+        background-color: transparent;
+        border: 2px solid #a1a1a1;
+    }
+
+    .calculate__field {
+        color: #a1a1a1;
+        padding: 10px;
+        width: 220px;
+
+        @media screen and (max-width: 480px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .calculate__btn {
+        background-color: #323232;
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    .calculate__entry {
+        margin-block: 20px;
+        display: flex;
+    }
+
+    .calculate__entry span {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .form__actions {
+         margin-block: 15px;
+         display: flex;
+         gap: 2px
+    }
+
+    #result {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}

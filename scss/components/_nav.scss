@@ -1,0 +1,51 @@
+.nav {
+    color: #fff;
+    margin-top: 35px;
+    position: relative;
+    
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+	    align-items: center;
+        position: relative;
+
+        @media screen and (max-width: 1199px) {
+           margin-left: -120px;
+        }
+
+         @media screen and (max-width: 1023px) {
+           flex-direction: column;
+           margin-left: unset;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 16px;
+
+         @media screen and (max-width: 1023px) {
+         font-size: 24px;
+         color: $c-white;
+         font-weight: 500;
+        }
+    }
+
+    li:not(:last-child) {
+        margin-right: 20px;
+
+         @media screen and (max-width: 1023px) {
+            margin: 0 0 20px 0;
+        }
+    }
+
+    li {
+        transition: color .3s ease-in-out;
+    }
+
+    li:hover {
+        color: $c-base;
+        transition: color .3s ease-in-out;
+    }
+}
