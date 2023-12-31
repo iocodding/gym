@@ -1,6 +1,5 @@
 {
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/classes", "dest": "/classes.html" }
+  "rewrites": [
+      {"source": "/(.*)", "destination": "/"}
   ]
 }
